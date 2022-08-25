@@ -7,6 +7,13 @@
   --footerHeight: -100px;
   --headerHeight: 100px;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+*  {
+margin:0;
+}
 
 body {
   margin: 0;
@@ -29,7 +36,7 @@ a {
 
 .header {
   position: fixed;
-  display: inline;
+  display: block;
   top: 0px;
   height: var(--headerHeight);
   width: 100%;
@@ -76,26 +83,20 @@ a {
 #main-container {
   height: auto;
   display:  block;
+  margin: auto;
+
 }
 
 .container {
   display: block;
-  margin:  auto;
-  padding-top: var(--headerHeight);
-  padding-bottom: 100px;
+  margin:  0 auto 0;
+  /*padding-top: var(--headerHeight);
+  padding-bottom: 100px;*/
   text-align: center;
   color: white;
-  height: 85vh;
+  height: 100vh;
   max-width: var(--maxWidth);
 }
-
-.footer{
-  height: 100px;
-  text-align: center;
-  width: 100%;
-  color: white;
-}
-.footer p{
-  margin: 0;
-
+.content {
+  padding-top: var(--headerHeight);
 }
